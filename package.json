@@ -13,7 +13,9 @@
     "lint": "eslint src tests bin",
     "lint:fix": "eslint src tests bin --fix",
     "format": "prettier --write \"src/**/*.js\" \"tests/**/*.js\" \"bin/**/*.js\"",
-    "format:check": "prettier --check \"src/**/*.js\" \"tests/**/*.js\" \"bin/**/*.js\""
+    "format:check": "prettier --check \"src/**/*.js\" \"tests/**/*.js\" \"bin/**/*.js\"",
+    "postinstall": "pnpm dlx @socketsecurity/socket-patch apply --silent --ecosystems npm",
+    "dependencies": "pnpm dlx @socketsecurity/socket-patch apply --silent --ecosystems npm"
   },
   "keywords": [
     "post-quantum",
